@@ -1,0 +1,294 @@
+<!-- @Ritika Kumari -->
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+     rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <title>Symptoms page</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  
+    
+
+  </head>
+  <body>
+
+<!-- @Ritika Kumari -->
+  <!-- Navbar start -->
+  <nav class="navbar navbar-expand-lg navbar-dark " style="background-color: rgb(121, 50, 95);">
+    <div class="container-fluid">
+      <a class="navbar-brand d-flex align-items-center" href="#" style="font-weight: bold; font-size:30px; color: darkblue;">
+   <img src="{{ url_for('static', filename='covid_19.jpg') }}" alt="crona"  style="height: 130px; width: 130px; border-radius: 50%;  margin-right: 10px;">
+
+  <strong style="color: rgb(211, 216, 231); font-size:28px;">COVID
+          Tracker</strong></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto"> 
+          <li class="nav-item me-4">
+            <a class="nav-link  " aria-current="page" href="{{url_for('home')}} " style="font-size:22px;">Home</a>
+          </li>
+          <li class="nav-item me-4">
+            <a class="nav-link active" href="{{url_for('symptoms')}}" style="font-size:22px;">Symptoms</a>
+          </li>
+          <li class="nav-item me-4">
+            <a class="nav-link" href="{{url_for('prevention')}}" style="font-size:22px;">Prevention</a>
+          </li>
+          <li class="nav-item me-4">
+            <a class="nav-link " href="{{url_for('live_stats')}}" style="font-size:22px;">Live Stats</a>
+          </li>
+          <li class="nav-item me-4">
+            <a class="nav-link" href="{{url_for('contactus')}}" style="font-size:22px;">Contact Us</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!-- Navbar End -->
+
+  <!-- Main Section start -->
+   <main>
+        <!-- section 1 -->
+        <section class="bg-light py-1">
+            <div class="container d-flex flex-column flex-md-row align-items-center gap-4">
+                <div class="col-md-6" style="width: 50%;">
+                    <h2 class="display-5 fw-bold text-primary mb-3  py-4">
+                        Recognize COVID-19 Symptoms
+                    </h2>
+                    <p class="lead"><b>Early detection helps prevent the spread.</b></p>
+                    </header>
+                </div>
+                <div class="col-md-6" style="width: 50%; margin-top: 3rem;">
+                    <img src="https://www.cdc.gov/covid/media/images/2024/07/gettyimages-1216034366-612x612-1.jpg"
+                        class="mb-3" alt="Fever" width=90% height="50%">
+                </div>
+            </div>
+        </section>
+
+        <!-- section 2 -->
+
+        <section class="container my-5" style="display: flex;">
+            <div class="row align-items-center">
+                <!-- Image Column -->
+                <div class="col-md-6 text-center mb-4 mb-md-0">
+                    <img src="https://static.vecteezy.com/system/resources/previews/019/617/362/original/sick-fever-symbol-png.png"
+                        class="mb-3" alt="Fever" width=300px height=350px alt="coronavirus" class="img-fluid" />
+                </div>
+
+                <!-- Text Column -->
+                <div class="col-md-6 text-secondary">
+                    <h2 class="text-center text-dark mb-4">Fever
+                    </h2>
+                    <p class="px-2">
+
+                    <p>One of the most common symptoms.Fever is a temporary rise in body temperature, often due to
+                        infection. It’s the body’s natural response to fight off viruses or bacteria. Common symptoms
+                        include sweating, chills, headache, and weakness. While usually not dangerous, persistent high
+                        fever may indicate a serious condition and should be evaluated by a healthcare provider.</p>
+                    </p>
+
+
+                </div>
+            </div>
+        </section>
+        <!-- section 3 -->
+        <section class="container my-5" style="display: flex;">
+            <div class="row align-items-center">
+                <div class="container my-5">
+                    <div class="row align-items-center">
+
+                        <!-- TEXT LEFT -->
+                        <div class="col-md-6 order-2 order-md-1">
+                            <h2 class="fw-bold">
+                                <center>Dry Cough</center>
+                            </h2>
+                            <p>
+                                Persistent cough without mucus.Cough is a common COVID-19 symptom, often dry and
+                                persistent. It may start mildly but can worsen over time, irritating the throat and
+                                chest. Unlike a productive cough, COVID-related cough usually lacks mucus. If
+                                accompanied by fever, fatigue, or breathing issues, it may indicate infection and should
+                                be monitored closely.
+                            </p>
+                        </div>
+
+                        <!-- IMAGE RIGHT -->
+                        <div class="col-md-6 text-center order-1 order-md-2">
+                            <img src="https://img.freepik.com/premium-vector/illustration-young-boy-coughing-by-covering-mouth_723224-3770.jpg?w=2000"
+                                alt="Cough" width=300px height=350px class="mb-3" />
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </section>
+        <!--image column -->
+
+
+        <!-- section 4 -->
+        <section class="container my-5" style="display: flex;">
+            <div class="row align-items-center">
+                <!-- Image Column -->
+                <div class="col-md-6 text-center mb-4 mb-md-0">
+                    <img src="https://static.vecteezy.com/system/resources/previews/041/911/804/original/shortness-of-breath-cute-on-a-white-background-illustration-vector.jpg"
+                        class="mb-3 " alt="Cough" width=370px height=350px class="mb-3" alt="Breathing"
+                        class="img-fluid" style="max-width: 80%;" />
+                </div>
+
+                <!-- Text Column -->
+                <div class="col-md-6 text-secondary">
+                    <h2 class="text-center text-dark mb-4">Shortness of Breath
+                    </h2>
+                    <p class="px-2">
+                        Difficulty breathing may be a sign of severe infection.Shortness of breath or difficulty
+                        breathing is a serious symptom of COVID-19, indicating possible lung involvement or low oxygen
+                        levels. It may start mildly but worsen quickly. This symptom requires immediate medical
+                        attention, especially if it’s sudden or severe, as it can lead to complications like pneumonia
+                        or respiratory failure.
+                    </p>
+                </div>
+            </div>
+        </section>
+        <!-- section 5 -->
+        <section class="container my-5" style="display: flex;">
+            <div class="row align-items-center">
+                <!-- text Column -->
+                <div class="col-md-6 text-secondary">
+                    <h2 class="text-center text-dark mb-4">Nausea or vomiting</h2>
+                    <p class="px-2">
+                        Nausea or vomiting can be symptoms of COVID-19, especially in early stages or in children. These
+                        digestive issues may occur alongside other signs like fever or fatigue. Though not as common as
+                        respiratory symptoms, they can signal infection. Persistent or severe symptoms should be
+                        evaluated by a healthcare professional.
+                    </p>
+                </div>
+                <!--image column -->
+                <div class="col-md-6 text-center mb-4 mb-md-0">
+                    <img src="https://clipart-library.com/2023/vector-kid-puking_75487-1339.jpg" class="mb-3 "
+                        alt="Cough" width=250px height=350px alt="Breathing" class="img-fluid"
+                        style="max-width: 50%;" />
+                </div>
+            </div>
+        </section>
+        <!-- section 6 -->
+        <section class="container my-5" style="display: flex;">
+            <div class="row align-items-center">
+                <!-- Image Column -->
+                <div class="col-md-6 text-center mb-4 mb-md-0">
+                    <img src="https://media.istockphoto.com/id/1158202021/vector/burnout-concept-illustration-with-exhausted-female-office-worker-sitting-at-the-table.jpg?s=612x612&w=0&k=20&c=UAme4FhZ4zQPRcl5bxkEWfvU-Ix-5PDRaniu9ynKmno="
+                        class="mb-3 " alt="Cough" width=400px hight=400px alt="Breathing" class="img-fluid" />
+                </div>
+
+                <!-- Text Column -->
+                <div class="col-md-6 text-secondary">
+                    <h2 class="text-center text-dark mb-4">Fatigue
+                    </h2>
+                    <p class="px-2">
+                        Fatigue is a common symptom of COVID-19, marked by extreme tiredness and lack of energy. It can
+                        persist even after mild infection, affecting daily activities. Fatigue may be physical or mental
+                        and is often accompanied by muscle weakness, low motivation, or poor concentration. Rest and
+                        hydration can help manage it.
+                    </p>
+                </div>
+            </div>
+        </section>
+        <!-- secttion 7 -->
+        <section class="container my-5" style="display: flex;">
+            <div class="row align-items-center">
+                <!-- text Column -->
+                <div class="col-md-6 text-secondary">
+                    <h2 class="text-center text-dark mb-4">Congestion or Runny nose</h2>
+                    <p class="px-2">
+                        Congestion or a runny nose is a mild but common COVID-19 symptom, especially with newer
+                        variants. It occurs when nasal tissues become inflamed, producing excess mucus. This can cause
+                        stuffiness, sneezing, or postnasal drip. Though similar to a cold or allergies, it should be
+                        monitored, especially if other symptoms develop.
+                    </p>
+                </div>
+                <!--image column -->
+                <div class="col-md-6 text-center mb-4 mb-md-0">
+                    <img src="https://media.istockphoto.com/id/1991302090/vector/a-man-with-a-stuffy-nose-and-a-runny-nose.jpg?s=612x612&w=0&k=20&c=Gx-FCXhjk-ytTtJrxKLc38du0VdmNBM4b0c1_5b3xfo="
+                        class="mb-3 " alt="Cough" width=400px hight=270px alt="Breathing" />
+                </div>
+            </div>
+        </section>
+    </main>
+  <!-- Main Section End -->
+
+  <!-- @Shivang Mahi -->
+  <!-- Footer start -->
+  <footer class="bg-dark text-white mt-5 pt-5 pb-3">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4 mb-4">
+          <h5 style="font-family:'Times New Roman', Times, serif; font-weight: bold;">About COVID-19 Info</h5>
+          <p class="text-white-50 small">
+            Stay informed with the latest updates, symptoms, prevention tips, and resources related to COVID-19 from
+            trusted health authorities.
+          </p>
+        </div>
+        <div class="col-md-4 mb-4 ms-5">
+          <h5 style="font-family:'Times New Roman', Times, serif; font-weight: bold;">Quick Links</h5>
+          <ul class="list-unstyled">
+            <li><a href="{{url_for('home')}}" class="text-light text-decoration-none"
+                onmouseover="this.style.color='white'" onmouseout="this.style.color=''"
+                style="transition: 0.3s;">Home</a></li>
+            <li><a href="{{url_for('symptoms')}}" class="text-light text-decoration-none"
+                onmouseover="this.style.color='white'" onmouseout="this.style.color=''"
+                style="transition: 0.3s;">Symptoms</a></li>
+            <li><a href="{{url_for('prevention')}}" class="text-light text-decoration-none"
+                onmouseover="this.style.color='white'" onmouseout="this.style.color=''"
+                style="transition: 0.3s;">Prevention</a></li>
+            <li><a href="{{url_for('live_stats')}}" class="text-light text-decoration-none"
+                onmouseover="this.style.color='white'" onmouseout="this.style.color=''" style="transition: 0.3s;">Live
+                Stats</a></li>
+            <li><a href="{{url_for('contactus')}}" class="text-light text-decoration-none"
+                onmouseover="this.style.color='white'" onmouseout="this.style.color=''"
+                style="transition: 0.3s;">Contact Us</a></li>
+          </ul>
+        </div>
+        <div class="col-md-3 mb-4 ms-5">
+          <h5 style="font-family:'Times New Roman', Times, serif; font-weight: bold;">Contact</h5>
+          <p class="mb-1">Helpline: <a href="tel:1075" class="text-info text-decoration-none">1075</a> (India)</p>
+          <p class="mb-1">Toll Free: <a href="tel:18003456019" class="text-info text-decoration-none">18003456019</a>
+            (Bihar)</p>
+          <p class="mb-2">Email: <a href="mailto:covidhelp@example.com"
+              class="text-info text-decoration-none">covidhelp@example.com</a></p>
+
+          <div class="mt-4 flex space-x-4">
+            <a href="https://www.facebook.com/MoHFWIndia" target="_blank"
+              style="color: white; margin-right: 15px; text-decoration: none;" onmouseover="this.style.color='#1DA1F2'"
+              onmouseout="this.style.color='white'">
+              <i class="fab fa-facebook"></i> Facebook
+            </a>
+
+            <a href="https://twitter.com/MoHFW_INDIA" target="_blank"
+              style="color: white; margin-right: 15px; text-decoration: none;" onmouseover="this.style.color='#1DA1F2'"
+              onmouseout="this.style.color='white'">
+              <i class="fab fa-twitter"></i> Twitter
+            </a>
+
+            <a href="https://www.instagram.com/mohfw_india/" target="_blank"
+              style="color: white; text-decoration: none;" onmouseover="this.style.color='#1DA1F2'"
+              onmouseout="this.style.color='white'">
+              <i class="fab fa-instagram"></i> Instagram
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="text-center mt-4 pt-3 border-top border-secondary text-white-50 small">
+        &copy; 2025 COVID-19 Info Center. All rights reserved.
+      </div>
+    </div>
+  </footer>
+  <!-- Footer End -->
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" 
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+  </body>
+</html>
